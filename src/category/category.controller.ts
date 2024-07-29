@@ -41,6 +41,7 @@ export class CategoryController {
 
   @Patch(':id')
   @UseGuards(JwtAuthGuard)
+  @UsePipes(new ValidationPipe())
   update(
     @Param('id') id: string,
     @Body() updateCategoryDto: UpdateCategoryDto,
