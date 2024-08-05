@@ -29,7 +29,7 @@ export class TransactionController {
     return this.transactionService.create(createTransactionDto, +req.user.id);
   }
 
-    // ...transactions/expence/find
+    // ...transactions/expense/find
   @Get(':type/find')
   @UseGuards(JwtAuthGuard)
   findAllByType(@Req() req, @Param('type') type: string) {
