@@ -19,26 +19,26 @@ Open [http://localhost:3000/api](http://localhost:3000/api) with your browser to
 
 You can do:
 
-[`categories:`]
-Create (POST) localhost:3000/api/categories/
-FindAll (GET) localhost:3000/api/categories/
-FinOne (GET) localhost:3000/api/categories/category/3
-Remove (DELETE) localhost:3000/api/categories/category/13
-Update (PATCH) localhost:3000/api/categories/category/16
-
-[`transactios:`]
-Create (POST) localhost:3000/api/transactions
-FindAll (GET) localhost:3000/api/transactions
-FindAllWithPagination (GET) localhost:3000/api/transactions/pagination?page=1&limit=2
-FindOne (GET) localhost:3000/api/transactions/51
-FindOneByType (GET) localhost:3000/api/transactions/expense/find
-Update (PATCH) localhost:3000/api/transactions/transaction/9
-Delete (DELETE) localhost:3000/api/transactions/transaction/4
-
-[`user:`]
-GetProfile (GET) localhost:3000/api/auth/profile
-Login (POST) localhost:3000/api/auth/login
-Registration (POST) localhost:3000/api/user
+`categories:`
+Create (POST) /categories/ <br>
+FindAll (GET) /categories/ <br> 
+FinOne (GET) /categories/category/3 <br>
+Remove (DELETE) /categories/category/13 <br>
+Update (PATCH) /categories/category/16 <br>
+<br>
+`transactios:`
+Create (POST) /transactions <br>
+FindAll (GET) /transactions <br>
+FindAllWithPagination (GET) /transactions/pagination?page=1&limit=2 <br>
+FindOne (GET) /transactions/51 <br>
+FindOneByType (GET) /transactions/expense/find <br>
+Update (PATCH) /transactions/transaction/9 <br>
+Delete (DELETE) /transactions/transaction/4 <br>
+<br>
+`user:`
+GetProfile (GET) /auth/profile <br>
+Login (POST) /auth/login <br>
+Registration (POST) /user <br>
 
 Database settings .env:
 
