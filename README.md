@@ -1,21 +1,19 @@
 This is a [Nest.js](https://nestjs.com/) project.
 You can grab the client for this project: [`client`](https://github.com/underwhot/money-manager-client).
 
-## Getting Started
+## Getting Started with Docker
 
-First, install all dependencies:
+Place all files into the /server directory and install all dependencies:
 
 ```bash
 npm install
 ```
 
-Second, run the development server:
+In the root directory, adjacent to the /server folder, create docker-compose.yml and .env files according to the instructions provided below, and then execute the command:
 
 ```bash
-npm run start:dev
+docker-compose up -d --build
 ```
-
-Open [http://localhost:3000/api](http://localhost:3000/api) with your browser to see the result.
 
 ## You can do:
 
@@ -40,7 +38,7 @@ GetProfile (GET) /auth/profile <br>
 Login (POST) /auth/login <br>
 Registration (POST) /user <br>
 
-## Database settings .env:
+## .env:
 
 ```bash
 API_PORT=3000
